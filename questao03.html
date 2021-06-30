@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Atividade Avaliativa</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      //Questão 03
+        function q3QualMaior() {
+          var q3numero1 = parseFloat(document.getElementById("q3numero1").value);
+          var q3numero2 = parseFloat(document.getElementById("q3numero2").value);
+          var q3numero3 = parseFloat(document.getElementById("q3numero3").value);
+          var maior = 0 ;
+          alert(Math.max(q3numero1, q3numero2, q3numero3));  
+
+
+        } 
+    </script>
+  </head>
+  <body>
+ <!---QUESTÃO 03 --->
+    <section>
+        <div>
+          <table border='0' width='70%'>
+            <tr>
+              <td>
+                <form class ="formulario" method="get">
+                  <h3> Questão 03 </h3>
+                  <p> Digite três números</p>
+                  <div class="field">
+                    <label for = "q3numero1"> 1º Número </label>
+                    <input type= "number" name="q3numero1"  id="q3numero1" placeholder="Digite o primeiro número" >
+                  </div>
+                  <div class="field">
+                    <label for = "q3numero2"> 2º Número </label>
+                    <input type="number" name="q3numero2" id="q3numero2" placeholder="Digite o segundo número" >
+                  </div>
+                  <div class="field">
+                    <label for = "q3numero3"> 3º Número </label>
+                    <input type="number" name="q3numero3" id="q3numero3" placeholder="Digite o terceiro número" >
+                  </div>
+                  <br />
+                  <button onclick="q3QualMaior()">Calcular Maior</button>
+                </form>	
+              </td>
+            </tr>
+          </table>
+        </div>
+    </section>
+  <button onclick="window.location.href='/index.html'">Principal</button>
+  <script src="script.js"></script>
+  </body>
+</html>
